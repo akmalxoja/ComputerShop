@@ -1,4 +1,5 @@
-﻿using ComputerShop.DTOs.Keyboard;
+﻿using ComputerShop.DTOs.Computer;
+using ComputerShop.DTOs.Keyboard;
 using ComputerShop.Models;
 
 namespace ComputerShop.Services.Interfaces
@@ -10,6 +11,13 @@ namespace ComputerShop.Services.Interfaces
         Task<Keyboard> CreateAsync(KeyboardCreateDto dto);
         Task<Keyboard?> UpdateAsync(int id, KeyboardUpdateDto dto);
         Task<bool> DeleteAsync(int id);
+
+        Task<List<Keyboard>> FilterAsync(KeyboardFilterDto keyboardFilterDto);
+
+        Task<List<string>> GetAvailableSwitchTypesAsync();
+        Task<List<bool>> GetAvailableWirelessOptionsAsync();
+
+        IEnumerable<Keyboard> SearchKeyboards(string keyword);
     }
 
 }

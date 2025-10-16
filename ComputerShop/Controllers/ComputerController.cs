@@ -3,6 +3,7 @@ using ComputerShop.Models;
 using ComputerShop.Services.Implementations;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace ComputerShop.Controllers
 {
@@ -91,5 +92,14 @@ namespace ComputerShop.Controllers
             return Ok(cpus);
 
         }
+
+        //Serch
+        [HttpGet("search")]
+        public IActionResult Search([FromQuery] string keyword)
+        {
+            var result = _computerService.SearchComputers(keyword);
+            return Ok(result);
+        }
+
     }
 }

@@ -125,7 +125,14 @@ namespace ComputerShop.Services.Implementation
                 .ToListAsync();
         }
 
-       
+        public IEnumerable<Computer> SearchComputers(string keyword)
+        {
+            if (string.IsNullOrWhiteSpace(keyword))
+                return _context.Computers.ToList();
 
+            return _context.Computers
+                .Where(c => c.Name.ToLower().Contains(keyword.ToLower()))
+                .ToList();
+        }
     }
 }

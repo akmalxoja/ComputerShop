@@ -5,7 +5,7 @@
     using ComputerShop.Models;
     using ComputerShop.Services.Interfaces;
     using Microsoft.EntityFrameworkCore;
-
+    using System.Collections.Generic;
 
     public class KeyboardService : IKeyboardService
     {
@@ -66,6 +66,66 @@
             _context.Keyboards.Remove(keyboard);
             await _context.SaveChangesAsync();
             return true;
+        }
+
+
+
+    
+        public async Task<List<Keyboard>> FilterAsync(KeyboardFilterDto filterDto)
+        {
+           
+                var query = _context.Keyboards.AsQueryable();
+
+                if (!string.IsNullOrEmpty(filterDto.SwitchType))
+                    query = query.Where(k => k.SwitchType == filterDto.SwitchType);
+
+            //if (!string.IsNullOrEmpty(filterDto.Brand))
+            //    query = query.Where(k => k.Brand == filterDto.Brand);
+
+                if (filterDto.IsWireless.HasValue)
+                    query = query.Where(k => k.IsWireless == filterDto.IsWireless);
+
+                if (filterDto.IsWireless.HasValue)
+                        query = query.Where(k => k.IsWireless == filterDto.IsWireless.Value);
+
+                if (filterDto.MinPrice.HasValue)
+                    query = query.Where(k => k.Price >= filterDto.MinPrice.Value);
+
+                if (filterDto.MaxPrice.HasValue)
+                    query = query.Where(k => k.Price <= filterDto.MaxPrice.Value);
+
+                //return await query.ToListAsync();
+                return await query.ToListAsync();
+            
+        }
+
+
+        public async Task<List<string>> GetAvailableSwitchTypesAsync()
+        {
+            return await _context.Keyboards
+                .Select(k => k.SwitchType)
+                .Distinct()
+                .OrderBy(x => x)
+                .ToListAsync();
+        }
+
+        public async Task<List<bool>> GetAvailableWirelessOptionsAsync()
+        {
+            return await _context.Keyboards
+                .Select(k => k.IsWireless)
+                .Distinct()
+                .OrderBy(x => x)
+                .ToListAsync();
+        }
+
+        public IEnumerable<Keyboard> SearchKeyboards(string keyword)
+        {
+             if (string.IsNullOrWhiteSpace(keyword))
+                return _context.Keyboards.ToList();
+
+            return _context.Keyboards
+                .Where(c => c.Name.ToLower().Contains(keyword.ToLower()))
+                .ToList();
         }
     }
 

@@ -1,6 +1,7 @@
 using ComputerShop.Data;
 using ComputerShop.Services.Implementation;
 using ComputerShop.Services.Implementations;
+using ComputerShop.Services.Interfaces;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -17,6 +18,7 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 
 // Service qo‘shish (scoped qilib ro‘yxatdan o‘tkaziladi)
 builder.Services.AddScoped<IComputerService, ComputerService>();
+builder.Services.AddScoped<IKeyboardService, KeyboardService>();
 
 // Cors (Frontend kerak bo‘lsa)
 builder.Services.AddCors(options =>
@@ -39,7 +41,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.UseHttpsRedirection();
+//app.UseHttpsRedirection();
 
 app.UseCors("AllowAll");
 

@@ -11,6 +11,7 @@ namespace ComputerShop.Services.Implementations
         Task<Computer?> UpdateAsync(int id, ComputerUpdateDto dto);
         Task<bool> DeleteAsync(int id);
         Task<List<Computer>> FilterAsync(ComputerFilterDto filterDto);
+        IEnumerable<Computer> SearchComputers(string keyword);
 
 
         // 🔹 Dropdown uchun variantlar

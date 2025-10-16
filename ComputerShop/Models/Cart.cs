@@ -1,4 +1,6 @@
-﻿namespace ComputerShop.Models
+﻿using ComputerShop.Models.ComputerShop.Models;
+
+namespace ComputerShop.Models
 {
     public class Cart
     {

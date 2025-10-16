@@ -1,4 +1,5 @@
 ﻿using ComputerShop.Models;
+using ComputerShop.Models.ComputerShop.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace ComputerShop.Data
