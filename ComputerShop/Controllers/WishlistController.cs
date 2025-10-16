@@ -12,6 +12,7 @@ namespace ComputerShop.Controllers
         private readonly AppDbContext _context;
         public WishlistController(AppDbContext context) => _context = context;
 
+
         [HttpGet("{userEmail}")]
         public IActionResult GetWishlist(string userEmail)
         {
