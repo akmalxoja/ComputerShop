@@ -1,11 +1,16 @@
 # ComputerShop
 Home page
-![Uploading image.png…]()
+<img width="1900" height="888" alt="image" src="https://github.com/user-attachments/assets/3b7935d0-109d-4e25-a065-6cd6e93418e4" />
+<br>
+<br>
+<br>
+<br>
 
 
 
 Computer page
-<img width="1899" height="846" alt="image" src="https://github.com/user-attachments/assets/bc22f11d-f319-4ffc-9094-8bb9cabd4cb6" />
+<img width="1900" height="888" alt="image" src="https://github.com/user-attachments/assets/cacae718-c4e5-4c2a-89ff-35120803f409" />
+
 
 <br>
 <br>
@@ -14,12 +19,14 @@ Computer page
 
 
 Keyboard page
-<img width="1901" height="919" alt="image" src="https://github.com/user-attachments/assets/39b78803-36fc-4669-b9d7-0d7a37a0c169" />
+<img width="1905" height="921" alt="image" src="https://github.com/user-attachments/assets/99005d40-ab56-4840-9940-7c5bb8845063" />
+
 
 <br>
 <br>
 <br>
 Admin page
+
 
 
 
