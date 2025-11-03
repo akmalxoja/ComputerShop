@@ -1,6 +1,6 @@
 # ComputerShop
 Home page
-![Uploading image.png…]()
+<img width="1903" height="921" alt="image" src="https://github.com/user-attachments/assets/2dde7f9b-313d-4aaf-b3a9-ba5756e80a1b" />
 
 <br>
 <br>
@@ -21,12 +21,19 @@ Computer page
 
 Keyboard page
 <img width="1905" height="921" alt="image" src="https://github.com/user-attachments/assets/99005d40-ab56-4840-9940-7c5bb8845063" />
+<br>
+<br>
+<br>
+
+Cart page
+![Uploading image.png…]()
 
 
 <br>
 <br>
 <br>
 Admin page
+![Uploading image.png…]()
 
 
 
