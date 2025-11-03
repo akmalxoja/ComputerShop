@@ -1,4 +1,8 @@
 # ComputerShop
+Home page
+![Uploading image.png…]()
+
+
 
 Computer page
 <img width="1899" height="846" alt="image" src="https://github.com/user-attachments/assets/bc22f11d-f319-4ffc-9094-8bb9cabd4cb6" />
