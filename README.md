@@ -1,6 +1,7 @@
 # ComputerShop
 Home page
-<img width="1900" height="888" alt="image" src="https://github.com/user-attachments/assets/3b7935d0-109d-4e25-a065-6cd6e93418e4" />
+![Uploading image.png…]()
+
 <br>
 <br>
 <br>
