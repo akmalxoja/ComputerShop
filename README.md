@@ -33,6 +33,13 @@ Cart page
 <br>
 <br>
 
+FAQ page
+<img width="1897" height="911" alt="image" src="https://github.com/user-attachments/assets/18cc8fc8-965c-4105-9859-6e7c7b6f3513" />
+
+<br>
+<br>
+<br>
+<br>
 
 Admin page
 <img width="1903" height="921" alt="image" src="https://github.com/user-attachments/assets/2dde7f9b-313d-4aaf-b3a9-ba5756e80a1b" />
