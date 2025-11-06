@@ -25,14 +25,14 @@ Keyboard page
 <br>
 
 Cart page
-![Uploading image.png…]()
+<img width="1901" height="860" alt="image" src="https://github.com/user-attachments/assets/86018863-f617-4357-a9f6-45109c2630da" />
 
 
+
 <br>
 <br>
 <br>
-Admin page
-![Uploading image.png…]()
+
 
 Admin page
 <img width="1903" height="921" alt="image" src="https://github.com/user-attachments/assets/2dde7f9b-313d-4aaf-b3a9-ba5756e80a1b" />
