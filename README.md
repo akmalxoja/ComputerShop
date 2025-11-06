@@ -1,11 +1,4 @@
 # ComputerShop
-Home page
-<img width="1903" height="921" alt="image" src="https://github.com/user-attachments/assets/2dde7f9b-313d-4aaf-b3a9-ba5756e80a1b" />
-
-<br>
-<br>
-<br>
-<br>
 
 
 
@@ -35,6 +28,13 @@ Cart page
 Admin page
 ![Uploading image.png…]()
 
+Admin page
+<img width="1903" height="921" alt="image" src="https://github.com/user-attachments/assets/2dde7f9b-313d-4aaf-b3a9-ba5756e80a1b" />
+
+<br>
+<br>
+<br>
+<br>
 
 
 
