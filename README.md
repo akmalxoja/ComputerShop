@@ -1,6 +1,7 @@
 # ComputerShop
 Home page
-<img width="1904" height="918" alt="image" src="https://github.com/user-attachments/assets/352cf054-f10d-4b55-8bd8-d19fc311a480" />
+<img width="1899" height="918" alt="image" src="https://github.com/user-attachments/assets/97be2194-9c60-4b3f-aafe-9af0b75f6f42" />
+
 
 <br>
 <br>
